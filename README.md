@@ -36,9 +36,10 @@ Body Params: {
 ```
 Response:	
 ```
-{
-status: boolean,
-balance:float,
+{ 
+ status: number, 
+ err: object,  
+ val: { user: string, balance: string } 
 }
 ```
 *if the user already exists the status parameter will be false with an error message.*
