@@ -57,7 +57,11 @@ Body Params: {
 Response: 
 ```
 {
- token: string,
+  status: number,
+  err: object,
+  val: {
+    token: string
+  }
 }
 ```
 
@@ -78,7 +82,7 @@ HTML for game starting.
 ### Insert Bet.
 When you bet, our server inform your server via REST, so, you must create the insertBet endpoint.
 ```
-POST	http://**[yourserver_ip]**/insertBet
+POST	http://[yourserver_ip]/insertBet
 
 Body Params	{
  trxid:string,
