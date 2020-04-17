@@ -141,15 +141,15 @@ This method allow you change constantly your client ip conection when you are on
 POST	http://[universalDomain]/api/client/security/address
 
 Body Params	{
-    "clienttext": string,
-    "ip": string
+    phrase: string,
+    ip: string
 }
 ```
 
 Response	
 ```
 {
- success:1
+ status:1
 }
 ```
 
