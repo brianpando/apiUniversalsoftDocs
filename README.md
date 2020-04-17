@@ -133,4 +133,24 @@ Amount: bet amount.
 Sessionid: user session id. 
 transactionReference: if you win the bet, the value you will take will be the id of the transaction where you made the bet
 
+
+### Change Client IP (for dev environment).
+
+This method allow you change constantly your client ip conection when you are on dev phase.
+```
+POST	http://[universalDomain]/api/client/security/address
+
+Body Params	{
+    "clienttext": string,
+    "ip": string
+}
+```
+
+Response	
+```
+{
+ success:1
+}
+```
+
 *fin*
