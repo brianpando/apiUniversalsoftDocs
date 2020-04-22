@@ -5,7 +5,7 @@ Documentation about UniversalSoft Api
 First of all you have to send us a valid user so we can create a Client ID and you need to send us as well a valid IP address from where your requests will arrive to our servers. Once we have this information we will proceed for the activation of our system for the communication from and to you. Example:
 
 ClientID=`mybetstore`
-> IP=http://mybetstore.com or http://159.15.35.45
+> IP=https://mybetstore.com or http://159.15.35.45
 
 ## List Games
 The gamelist command show you all games allowed for your client ID
@@ -23,7 +23,7 @@ Array with the game objects.
 ## Create User
 Is necessary to register your user at the first time he trying to play with us.
 ```
-POST	http://[universalDomain]/api/createuser
+POST	https://[universalDomain]/api/createuser
 Body Params: {
  username: string,
  firstname:string,
@@ -48,7 +48,7 @@ Response:
 Before user launch a game, he need get a token session.
 
 ```
-POST	http://[universalDomain]/api/auth
+POST	https://[universalDomain]/api/auth
 Body Params: {
  username: string,
  balance:float
@@ -68,7 +68,7 @@ Response:
 ## Launch Game
 To launch a game you need to redirect the url. 
 ```
-GET	http://[universalDomain]/launch
+GET	https://[universalDomain]/launch
 Query Params:	{
  sessionid: alphanumeric,
  gameid: string,
@@ -82,7 +82,7 @@ HTML for game starting.
 ### Insert Bet.
 When you bet, our server inform your server via REST, so, you must create the insertBet endpoint.
 ```
-POST	http://[yourserver_ip]/insertBet
+POST	https://[yourserver_ip]/insertBet
 
 Body Params	{
  trxid:string,
@@ -109,7 +109,7 @@ Game: game id
 
 When you win, our server inform your server via REST, so, you must create the betResult endpoint
 ```
-POST	http://[yourserver_ip]/betResult
+POST	https://[yourserver_ip]/betResult
 
 Body Params	{
  trxid:string,
