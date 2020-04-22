@@ -138,7 +138,7 @@ transactionReference: if you win the bet, the value you will take will be the id
 
 This method allow you change constantly your client ip conection when you are on dev phase.
 ```
-POST	http://[universalDomain]/api/client/security/address
+PUT	http://[universalDomain]/api/client/security/address
 
 Body Params	{
     phrase: string,
