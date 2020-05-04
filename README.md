@@ -72,6 +72,9 @@ GET	https://[universalDomain]/launch
 Query Params:	{
  sessionid: alphanumeric,
  gameid: string,
+ p: string(2),
+ b: string,
+ m: string(mb|wb)
 }
 ```
 Response:	
