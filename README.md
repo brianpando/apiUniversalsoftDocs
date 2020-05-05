@@ -25,9 +25,9 @@ Is necessary to register your user at the first time he trying to play with us.
 ```
 POST	https://[universalDomain]/api/createuser
 Body Params: {
- username: string,
- firstname:string,
- lastname:string,
+ username: string(20) [(Aa_Zz|0_9)*],
+ firstname:string(20),
+ lastname:string(20),
  country: text, (PE, BR, PT, etc)
  currency: text, (PEN, USD),
  balance:float,
