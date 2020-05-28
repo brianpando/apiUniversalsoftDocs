@@ -15,6 +15,7 @@ GET http://[universalDomain]/gamelist
 Query Params: 
 page [number] (default=1)
 perPage [number] (default=100)
+p [String] (optional)
 ```
 Response:
 ```
