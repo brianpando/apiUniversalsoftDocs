@@ -120,7 +120,7 @@ Body Params	{
  movement:string(WIN,REFOUND),
  amount:float,
  sessionid: alphanumeric,
- transactionReference:string| null
+ betReference:string| null
 }
 ```
 
