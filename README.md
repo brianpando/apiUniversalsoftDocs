@@ -157,4 +157,33 @@ Response
 }
 ```
 
+### Transactions Report
+
+This method allow you to show transactions of all users.
+```
+GET	https://[universalDomain]/api/client/transactions
+
+Headers['phrase'] = string
+
+Query Params	{
+    page: string (default=1),
+    perPage: string (default=10),
+    username: string (optional),
+}
+```
+
+Response	
+```
+{
+ data: array,
+ pagination: { 
+  page: number, 
+  total: number, 
+  perPage: number, 
+  previous: number, 
+  next: number
+ },
+ isTotal: boolean
+}
+```
 *fin*
