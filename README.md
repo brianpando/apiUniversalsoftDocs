@@ -186,4 +186,15 @@ Response
  isTotal: boolean
 }
 ```
+
+### Extra Info
+Categories:
+```
+tv : TV Games
+virtual: Virtual Sports
+slot: Slot  Games
+slot_live: Slot Live Games
+poker: Poker Games
+iq: Iq Games  
+```
 *fin*
