@@ -193,7 +193,7 @@ p: sl => the transaction send a win calculated (win - bet), and inform the win a
 ```
 
 ```
-p: ev => return a reference Bet. because first save a Bet transaction, then save a Win transaction. 
+p: eb => return a reference Bet. because first save a Bet transaction, then save a Win transaction. 
 ```
 
 ```
@@ -202,6 +202,9 @@ p:vg => return a reference Bet. Because first save a Bet transaction, then save 
 
 ```
 p:tv => return a referente Bet. Because first save a Bet transaction, then save a Win transaction.
+```
+```
+p:ho => return a referente Bet. Because first save a Bet transaction, then save a Win transaction.
 ```
 
 new games we will documenting soon.
