@@ -186,9 +186,28 @@ Response
  isTotal: boolean
 }
 ```
+### Important Information about Transactions
+When a win transaction is done, some games have the next logic:
+```
+p: sl => the transaction send a win calculated (win - bet), and inform the win amount. it dont send a bet transaction.
+```
+
+```
+p: ev => return a reference Bet. because first save a Bet transaction, then save a Win transaction. 
+```
+
+```
+p:vg => return a reference Bet. Because first save a Bet transaction, then save a Win transaction. 
+```
+
+```
+p:tv => return a referente Bet. Because first save a Bet transaction, then save a Win transaction.
+```
+
+new games we will documenting soon.
 
 ### Extra Info
-Categories:
+We have this games categories :
 ```
 tv : TV Games
 virtual: Virtual Sports
@@ -197,4 +216,7 @@ slot_live: Slot Live Games
 poker: Poker Games
 iq: Iq Games  
 ```
+
+
+
 *fin*
