@@ -137,6 +137,24 @@ Amount: bet amount.
 Sessionid: user session id. 
 transactionReference: if you win the bet, the value you will take will be the id of the transaction where you made the bet
 
+### Get User Balanace.
+
+Some games will request for user Balance
+```
+POST	https://[yourserver_ip]/getUserBalance
+
+Body Params	{
+ sessionid:string
+}
+```
+
+Response	
+```
+{
+ status:1,
+ balance:float
+}
+```
 
 ### Change Client IP (for dev environment).
 
