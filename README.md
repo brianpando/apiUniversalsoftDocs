@@ -137,7 +137,7 @@ Amount: bet amount.
 Sessionid: user session id. 
 transactionReference: if you win the bet, the value you will take will be the id of the transaction where you made the bet
 
-### Get User Balanace.
+### Get User Balance.
 
 Some games will request for user Balance
 ```
