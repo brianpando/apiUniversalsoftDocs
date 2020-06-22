@@ -21,6 +21,19 @@ Response:
 ```
 Array with the game objects.
 ```
+
+## List Filters
+The gamelist command show you all games allowed for your client ID
+
+```
+GET http://[universalDomain]/gamefilter
+Headers:
+phrase:(string),
+```
+Response:
+```
+Array with the objects [brands:[], categories[]].
+```
 ## Create User
 Is necessary to register your user at the first time he trying to play with us.
 ```
